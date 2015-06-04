@@ -23,7 +23,7 @@ and now you can start a parpool by
 
 > c.parpool(4)
 
-and now you can do parfor loops as before, after you finish calculation you can close the pool by
+wait till LSF gets you the allocation, and now you can do parfor loops as before, after you finish calculation you can close the pool by
 
 > delete(gcp)
 
