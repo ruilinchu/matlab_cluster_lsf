@@ -3,7 +3,7 @@ put these scripts in ~/matlab/ and follow the examples to submit parallel or bat
 
 A simple work through is like this:  first, you need to do the following:
 
-$ cp -r /groups/rccg/rc200/matlab ~/
+download this repo and rename it as ~/matlab
 
 and now you can start up an interactive sssion by
 
