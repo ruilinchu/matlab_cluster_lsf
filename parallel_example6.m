@@ -1,6 +1,12 @@
+%% first time run this part, next time no need
 c=parallel.cluster.LSF();
 evalc('system(''mkdir -p ~/MATLAB_JOB_STORAGE'')');
 c.JobStorageLocation='~/MATLAB_JOB_STORAGE';
+saveAsProfile(c,'orchestra')
+parallel.defaultClusterProfile('orchestra')
+
+%% next time start from here
+c=parcluster;
 c.SubmitArguments='-W 00:02 -q mpi';
 
 c.parpool(22)
