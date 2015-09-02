@@ -15,7 +15,8 @@ j.createTask(@exp, 1, {a});
 
 % in toal three independent jobs are sent to short queue using 1 core
 j.submit;
-j.wait;
+j.wait('finished');
+pause(20);
 
 result = j.fetchOutputs;
 f = [result{:}];
