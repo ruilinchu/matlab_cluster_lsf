@@ -8,14 +8,14 @@ c.SubmitArguments='-W 01:00 -q priority';
 
 c.parpool(8)
 
-c = Composite();
+a = Composite();
 spmd
 temp = labindex*ones(10);
 for u=1:10
-  c = temp * temp;
+  a = temp * temp;
 end
 end
-d=[c{:}];
+d=[a{:}];
 save('test.mat','d');
 
 delete(gcp)
